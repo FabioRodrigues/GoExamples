@@ -28,10 +28,8 @@ func main() {
 
 	fmt.Println()
 	lista := [2]int{1, 2}
-	k := 0
-	for range lista {
-		fmt.Println("Item da lista", lista[k])
-		k++
+	for _, item := range lista {
+		fmt.Println(item)
 	}
 
 }

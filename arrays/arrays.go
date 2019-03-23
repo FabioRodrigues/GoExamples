@@ -4,11 +4,8 @@ import "fmt"
 
 func main() {
 	lista1 := [2]int{1, 2}
-	i := 0
-	for range lista1 {
-		fmt.Println(lista1[i])
-		i++
-
+	for _, item := range lista1 {
+		fmt.Println(item)
 	}
 
 	fmt.Println()
